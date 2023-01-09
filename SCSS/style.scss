@@ -1,0 +1,327 @@
+$black: #0D0D0D;
+$secondary_grey: #C9C9C9; 
+$primary_white: #FFFFFF;
+$brand_color: #2DCA72;
+$card_color: #181818;
+$rubik: 'Rubik', sans-serif;
+
+
+
+.container__body{
+    background-color: $black;
+    background-image: url(../Resources/Layout/background.png);
+    background-position: top;
+}
+
+.upper_bar__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 27px;
+}
+
+.nav_header__cointainer{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.logo__img{
+    width: 83px; height: 38px;
+    display: inline-block;
+}
+
+.nav__a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: $secondary_grey;
+    font-size: 18px;
+    font-weight: 200;
+    font-family: $rubik;
+    position: relative;
+
+    &:hover:before{
+        transform: scaleX(1);
+        transition: transform 0.1s;
+    }
+    &::before{
+        content: '';
+        width: 80%;
+        height: 2px;
+        background-color: $brand_color;
+        position: absolute;
+        left: 0; bottom: -5px;
+        transform: scaleX(0);
+        transform-origin: left;
+
+    }
+
+    &:hover{
+        color: $secondary_grey;
+            border: 20px #2DCA72;
+    }
+
+}
+
+.contact_us__button{
+    background-color: $brand_color;
+    width: 147px; height: 47px;
+    border-radius: 50px;
+    font-family: $rubik;
+    font-weight: 400;
+    font-size: 16px;
+
+    border: none;
+}
+
+.main__header{
+    font-size: 55px;
+    font-weight: 700;
+    font-family: $rubik;
+    color: $primary_white;
+}
+
+.under_main__header{
+    font-size: 18px;
+    font-weight: 300;
+    font-family: $rubik;
+    color: $secondary_grey;
+    margin-top: 22px;
+}
+.right_side__header{
+    margin-top: 175px;
+}
+.layout__btn{
+    margin-top: 44px;
+}
+.header_heroy_img__container{
+    background-image: url(../Resources/HeroyHeader/CoverImgHeader.png);
+    
+    width: 565px; height: 652px;
+    display: flex;
+    justify-content: center;
+}
+
+.fetured_in__coitainer{
+    margin-top: 95px;
+}
+
+.small_section_header{
+    color: $primary_white;
+    font-family: $rubik;
+    font-size: 25px;
+    font-weight: 300;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.grey_section__header{
+    color: $secondary_grey;
+    font-family: $rubik;
+    font-size: 25px;
+    font-weight: 300;
+    display: inline-block;  
+    padding-left: 30px;
+    
+    border-left: solid 1.5px $secondary_grey;
+}
+
+.brands__container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    row-gap: 20px;
+}
+
+.one_brand__container{
+    display: flex;
+      justify-content: center;
+      align-items: center;
+    width: 230px; height: 100px;
+    
+    background-color: $card_color;
+    border-radius: 8px;
+}
+
+.brand__img{
+    display: inline-block;
+    width: 160px; height: 50px;
+}
+
+.dig_mark_expertise_container{
+    margin-top: 169.5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    gap: 22px;
+
+}
+
+.mark__card{
+    width: 300px; height: 240px;
+    background-color: $card_color;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.mark_card_align__container{
+    width: 225px;
+    flex-direction: column;
+    display: flex;
+    row-gap: 20px;
+}
+
+.mark_card__img{
+    width: 74px; height: 68px;
+}
+.card__header{
+    font-family: $rubik;
+    font-weight: 400;
+    font-size: 23px;
+    color: $secondary_grey;
+}
+.mark_exp__header{
+    font-family: $rubik;
+    font-size: 40px;
+    font-weight: 500;
+    color: $primary_white;
+}
+
+.mark_exp__text{
+    width: 460px;
+    margin-left: 20px;
+}
+
+.Why_we__container{
+    margin-top: 157px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.Why_we_heroy__container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    height: 660px;
+}
+
+.background__div{
+    width: 460px;
+    height: 435px;
+    background-color: #352205;
+    border-radius: 83px;
+    z-index: -1;
+    align-self: flex-end;
+    display: flex;
+    align-items: flex-end;
+}
+.Why_heroy_img{
+    position: absolute;
+    left: 120px;
+    bottom: 0px;
+}
+
+.revenue_info__container{
+    width: 225px; height: 90px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 430px; left: 0px;
+    padding: 5px;
+    padding-top: 7px; padding-bottom: 7px;
+}
+
+.revenue_info__header{
+    display: inline-block;
+    font-family: $rubik;
+    font-size: 15px;
+    font-weight: 200;
+    margin: 0;
+    
+}
+.revenue_info_percentage{
+    display: inline-block;
+    font-family: $rubik;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0;
+}
+.revenue_info_percentage__color{
+    color: green;
+}
+
+#arrow_percents{
+    font-weight: 100;
+}
+
+.revenue_info__text{
+    display: inline-block;
+    font-family: $rubik;
+    font-size: 13px;
+    font-weight: 300;
+    margin: 0;
+    
+
+}
+#revenu_info_money__color1{
+    color: purple;
+}
+#revenu_info_money__color2{
+    color: palevioletred;
+}
+
+.revenue_align__container{
+    width: 190px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#revenue__date1{
+    color: grey;
+}
+
+#revenue__date2{
+    color: grey;
+}
+
+.Our_latest_work__container{
+    margin-top: 133px;
+    
+}
+
+.card__img{
+    width: 374px; height: 250px;
+    border-radius: 20px;
+}
+.latest_work_card__container{
+    display: flex;
+    width: 374px;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.common_text{
+    font-size: 18px;
+    font-weight: 300;
+    font-family: $rubik;
+    color: $secondary_grey;
+}
+
+.cards__container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 41px;
+}
+
+.Testimonials__container{
+    margin-top: 134px;
+}
